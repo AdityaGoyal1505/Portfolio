@@ -1,3 +1,42 @@
+:root {
+  /* Primary Colors */
+  --color-bg: #0a0a0a;           /* Deep black background */
+  --color-text: #ffffff;         /* Bold white heading text */
+  --color-subtext: #b0b0b0;      /* Light gray subheading */
+  --color-accent: #fcd188;       /* Light gold accent (button + gradient) */
+  --color-button-text: #000000;  /* Black text on light buttons */
+
+  /* Font Sizes */
+  --font-size-heading: 3rem;
+  --font-size-subheading: 1.25rem;
+  --font-size-button: 1rem;
+
+  /* Font Weights */
+  --font-weight-bold: 800;
+  --font-weight-regular: 400;
+
+  /* Border Radius */
+  --radius-button: 999px; /* Pill shape */
+  --radius-card: 1.5rem;
+
+  /* Spacing */
+  --padding-button: 0.75rem 1.5rem;
+  --gap-large: 2rem;
+  --gap-medium: 1rem;
+
+  /* Gradients */
+  --circle-gradient: radial-gradient(circle at top left, rgba(252, 209, 136, 0.1) 0%, transparent 60%);
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image: var(--circle-gradient);
+  background-repeat: no-repeat;
+  background-size: 600px 600px;
+  color: var(--color-text);
+}
+
+
 .App {
   text-align: center;
 }

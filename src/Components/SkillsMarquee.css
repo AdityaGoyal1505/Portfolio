@@ -1,0 +1,84 @@
+.skills-marquee-container {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 20px 0;
+  position: relative;
+  height: 200px;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+.skills-marquee-container h1{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.marquee {
+  display: flex;
+  gap:50px;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-icon {
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  padding: 11px;
+  width: 85px;
+  height: 85px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+.skill-icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+/* Label under each skill on hover */
+.skill-label {
+  position: absolute;
+  bottom: -25px;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(5px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.skill-icon:hover .skill-label {
+  opacity: 1;
+  z-index: 1000;
+  transform: translateY(0);
+}
+
+/* Scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

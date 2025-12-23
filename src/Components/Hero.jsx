@@ -1,31 +1,37 @@
 import React from 'react';
 import './Hero.css';
+import { Fade, Slide } from 'react-awesome-reveal';
 
 const Hero = () => {
-  return (
+return (
     <section className="hero">
-      <div className="hero-content">
-        <p className="subtitle">Aditya Goyal, Developer</p>
-        <h1 className="title">
-          DEVELOPER THAT BUILDS <br />
-          CLEAN & SCALABLE <br />
-          WEB EXPERIENCES
-        </h1>
-        <p className="description">
-          Let’s build fast, modern, and elegant websites that solve real problems and create memorable experiences.
-        </p>
-        <div className="hero-buttons">
-          <a href="#contact" className="btn primary">Contact Me</a>
-          <a href="#video" className="btn secondary">Projects</a>
-        </div>
-      </div>
-      <div className="hero-image">
-        <div className="video-frame">
-          <img src={`${process.env.PUBLIC_URL}/images/Me.png`} alt="Developer at work" />
-        </div>
-      </div>
+        <Fade direction="left" cascade triggerOnce>
+            <div className="hero-content">
+                <p className="subtitle">Aditya Goyal, Full Stack Developer</p>
+                <h1 className="title">
+                    FULL STACK <span>DEVELOPER</span> THAT BUILDS <br />
+                    <span>MODERN </span>& SCALABLE <br />
+                    WEB EXPERIENCES
+                </h1>
+                <p className="description">
+                    Translating innovative ideas into polished, high-performing web applications that deliver measurable results.
+                </p>
+                <div className="hero-buttons">
+                    <a href="https://drive.google.com/file/d/1RnjyfS6eypQm-VEHDWNXzWczTLDW3qE8/view?usp=sharing" className="btn primary">Resume</a>
+                    <a href="#project-tit" className="btn secondary">Projects</a>
+                </div>
+            </div>
+        </Fade>
+
+        <Slide direction="right" triggerOnce>
+            <div className="hero-image">
+                <div className="video-frame">
+                    <img src={`${process.env.PUBLIC_URL}/images/Me.png`} alt="Full Stack Developer at work" />
+                </div>
+            </div>
+        </Slide>
     </section>
-  );
+);
 };
 
 export default Hero;

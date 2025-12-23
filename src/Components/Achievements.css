@@ -1,0 +1,102 @@
+:root {
+  --bg-color: #000;
+  --accent-color: #fcd188;
+  --text-color: #fff;
+  --card-bg: #111;
+  --transition-speed: 0.3s;
+  --radius: 12px;
+}
+
+.achievements {
+  background: transparent;
+  padding: 60px 20px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color:white;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  color: var(--accent-color);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all var(--transition-speed) ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--accent-color);
+  color: var(--bg-color);
+}
+
+/* Cards Grid */
+.cards {
+    margin-left: 20px;
+    margin-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  text-align: left;
+  cursor: pointer;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(252, 209, 136, 0.2);
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border:1px solid #fcd188;
+  color: #fcd188;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 50px;
+}

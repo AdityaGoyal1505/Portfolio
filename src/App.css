@@ -25,7 +25,7 @@
   --gap-medium: 1rem;
 
   /* Gradients */
-  --circle-gradient: radial-gradient(circle at top left, rgba(252, 209, 136, 0.1) 0%, transparent 60%);
+  --circle-gradient: radial-gradient(circle at top left, rgba(252, 209, 136, 0.2) 30%, transparent 70%);
 }
 
 body {

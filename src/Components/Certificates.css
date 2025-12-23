@@ -1,0 +1,118 @@
+/* certifications.css */
+:root {
+  --primary-color: #1b2653;
+  --secondary-color: var(--accent-color);
+  --bg-light: #1c1c1c;
+  --text-dark: #3a3a3a;
+  --text-light: #ffffff;
+  --border-color: #d0d7e2;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cert-section {
+  padding: 3rem 1rem;
+  background: transparent;
+}
+
+.cert-header {
+  margin-bottom: 2rem;
+}
+
+.cert-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.cert-subtitle {
+  /* margin-top: 0.5rem; */
+  color: rgb(218, 218, 218);
+  font-size: 1rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.cert-card {
+  background: #1c1c1c;
+  color: var(--secondary-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  transition: all var(--transition-speed) ease;
+}
+
+.cert-card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0 8px 20px rgba(252, 209, 136, 0.2);
+}
+
+.cert-card-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cert-logo-wrapper {
+  flex-shrink: 0;
+  /* background: #ffffff; */
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-logo {
+  max-height: 40px;
+  max-width: 60px;
+  object-fit: contain;
+}
+
+.cert-logo-icon {
+  color: var(--secondary-color);
+  width: 24px;
+  height: 24px;
+}
+
+.cert-text {
+  flex: 1;
+}
+
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.cert-issuer {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 0.25rem;
+}
+
+.cert-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.cert-verify:hover {
+  text-decoration: underline;
+}
+
+.cert-verify-icon {
+  width: 16px;
+  height: 16px;
+}

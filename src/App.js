@@ -7,7 +7,7 @@ import Footer from './Components/Footer';
 import Achievements from './Components/Achievements';
 import About from './Components/About';
 import Experience from './Components/Experience';
-
+import Certificates from './Components/Certificates';
 function App() {
   return (
     <div className="App">
@@ -17,6 +17,7 @@ function App() {
       <About />
       <Projects />
       <Achievements />
+      <Certificates />
       <Experience />
       <Footer />
     </div>

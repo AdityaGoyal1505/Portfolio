@@ -78,12 +78,11 @@
 }
 
 .header__right {
-    margin-right: 20px;
+  margin-right: 10px;
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  padding: 0;
-  border-radius: 1px solid white;
+  padding: 8px 19.2px;
   border-radius: 50px;
 }
 
@@ -91,16 +90,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 8px 19.2px;
-  border: 2px solid #fcd188 ;
+  margin-left: 20px;
+  font-size: 1.8rem;
   border-radius: 50px;
-  color: var(--color-accent, #fcd188);
+  /* color: var(--color-accent, #fcd188); */
+  color : white;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease, color 0.3s ease;
 }
 
 .header__right a:hover {
-  background-color: var(--color-accent, #fcd188);
-  color: #000; /* contrast text */
+  color : #fcd188;
 }
